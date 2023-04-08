@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<header>
+    <div class="main" id="myMain">
+      <div class="header">
+        <img
+          src="https://phuclong.com.vn/images/common/delivery.png"
+          alt=""
+          style="margin-left: 150px;width: 170px;height: 50px;"
+        />
+        <!-- LOGO HEADER -->
+        <div>
+          <img class="headerlogo" src="/assets/image/Logo Phuc Long Company.png" style="width: 87px;height: 60px;" alt="" />
+          <img class="headerlogo" src="/assets/image/Logo Phuc Long coffee&tea.png" style="width: 87px;height: 60px;" alt="" />
+          <img class="headerlogo" src="/assets/image/logo Phuc Long Tea.png" style="width: 87px;height: 60px;" alt="" />
+        
+          <script>
+            var myIndex = 0;
+            carousel();
+        
+            function carousel() {
+              var i;
+              var z = document.getElementsByClassName('headerlogo');
+        
+              for (i = 0; i < z.length; i++) {
+                z[i].style.display = "none";
+              }
+        
+              myIndex++;
+        
+              if (myIndex > z.length) {
+                myIndex = 1;
+              }
+        
+              z[myIndex - 1].style.display ="block";
+              setTimeout(carousel, 2000);
+            }
+          </script>
+        </div>
+
+        <div
+          style="
+            margin-right: 150px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+          "
+        >
+          <a>Đăng nhập</a> &nbsp;&nbsp;
+          <div style="display: flex">
+            <p>VN</p>
+            <p>&nbsp;|&nbsp;</p>
+            <p>EN</p>
+          </div>
+          <button
+            style="
+              margin-left: 8px;
+              width: 95px;
+              height: 30px;
+              margin-top: 0;
+              border-radius: 5px;
+              border: 1px solid #0c713d;
+            "
+          >
+            Giỏ hàng <img  alt=""></img>
+          </button>
+        </div>
+      </div>
+      <!-- <hr /> -->
+      <div class="navbar">
+        <a href="index.html" class="nav-title"><strong>TRANG CHỦ</strong></a>
+        <a href="thucuong.html"class="nav-title"><strong>THỨC UỐNG</strong></a>
+        <a href="cafe.html" class="nav-title"><strong>CÀ PHÊ</strong></a>
+        <a href="trà.html" class="nav-title"><strong>TRÀ</strong></a>
+        <a href="about.html" class="nav-title"><strong>VỀ CHÚNG TÔI</strong></a>
+      </div>
+    </div>
+  </header>
+  <script>
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    var header = document.getElementById("myMain");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+  <body>
+
+
+    <style>
+ 
+
+  .item{width: 1517px;}
+
+    .container{ margin-left: auto; margin-right: auto;position: relative; }
+
+ 
+    a{text-decoration: none;}
+    body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+
+
+p {
+  line-height: 2;
+}
+
+html {
+margin: 0px;
+padding: 0px;
+width: 100%;
+overflow: auto;
+}
+
+
+
+h2 { font-weight: 300;
+  font-family: 'Lora';
+  color: #0C713D;
+ 
+  /* text-align: center; */;
+}
+h1 { font-family: 'Lora';
+  color: #0C713D;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  /* text-align: center; */
+  font-size: 36px;
+}
+.card img {
+  width: 190px;
+  height: 200px;
+}
+.card {
+  
+  transition: 0.3s;
+  width: 255px;
+  text-align: center;
+  height: 357px;
+  margin-top: 40px;
+  display: inline-block;
+  margin-left: 30px;
+  border-radius: 7px;
+  
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+button {
+  width: 125px;
+  height: 35px;
+  margin-top: 20px;
+  border-color: rgba(20, 85, 45, 0.79);
+  background-color: white;
+  border-radius: 5px;
+  font-family: 'Hind', sans-serif;
+}
+button:hover {
+  cursor: pointer;
+}
+.card-title {
+  font-size: large;
+  font-weight: 900;
+}
+.main {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  /* position: fixed; */
+  display: block;
+  height: 102px;
+  background-color: white;
+}
+/* .main a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} */
+
+li {
+margin-top: 10px;
+}
+li:hover {
+color: rgb(9, 107, 9);
+}
+.picture {
+  /* margin-top: 20px; */
+  width: 1500px;
+}
+.header {
+  text-align: center;
+  display: block;
+}
+.main .header {
+  /* padding-left: 150px;
+  padding-right: 500px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main .navbar {
+  border-top: 2px solid #f5f5f5;
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+  padding: 10px;
+}
+.main .navbar a {
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.sticky + body {
+  padding-top: 102px;
+}
+
+h1{font-family: 'Lora';
+  color: #0C713D;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 36px;
+}
+
+.left-content{
+font-weight: 100px;
+color:black;
+margin-left: 100px;
+font-size: 11px;
+text-align: justify;
+}
+.footer{ 
+background-color: white;
+display: flex; margin-top: 20px;}
+.right-content{margin-left: 600px;}
+.bocongthuong{width: 160px; height: 60px;}
+.icon{width: 30px; height: 30px;margin-left: 7px;}
+ul{list-style: none;}
+
+
+hr {
+  border: dotted white 5px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+.Anh {
+  width: 60%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.Anh1 {
+  width: 50%;
+  float: left;
+  margin-right: 30px;
+}
+.top-content{margin-top: 60px;}
+
+.option{
+  display:block;
+  font-size: 28px;
+  color: #797979;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 25px;
+  text-decoration: none;
+}
+.list{display: inline-block;}
+
+.menu{margin-left: 400px;}
+
+.option:hover{color: #0C713D;
+border-top: 1px solid transparent;
+border-bottom: 1px solid transparent;
+text-align: center;
+padding: 0 25px;
+border-color: #0C713D;}
+
+a.nav-title:hover{color:#14cd36d6 ;}
+
+.Anh2 {
+  width: 30%;
+  float: right;
+  margin-left: 50px;
+}
+    .prev,.next{
+    position: absolute; 
+    padding: 16px; 
+    /* background: #ccc;  */
+    top: 50%; 
+    border-radius: 0 3px; 
+    margin-top: -22px;
+    font-style: 18px;
+    color: white;}
+
+    .next{right: 0; border-radius: 3px 0px;}
+    .prev{left: 0;}
+
+    .prev:hover , .next:hover{background-color: rgba(17, 233, 45, 0.89);}
+  
+    </style>
+
+    <!-- slider -->
+
+<div class="container">
+    <img class="item" src="/assets/image/trangchu1.jpg" alt="">
+    <img class="item" src="/assets/image/trangchu2.jpg">
+    <img class="item" src="/assets/image/trangchu3.png" alt="">
+
+    <a href="" class="prev">&#10094</a>
+    <a href="" class="next">&#10095</a>
+</div>
+
+<script>
+    var myIndex=0;
+    carousel();
+    function carousel(){
+        var i;
+        var x=document.getElementsByClassName('item');
+        for(var i=0; i<x.length; i++){x[i].style.display="none";}
+        myIndex++;
+        if (myIndex>x.length){myIndex=1;}
+        x[myIndex-1].style.display="block";
+        setTimeout(carousel,2000);
+    }
+</script>
+
+
+<style>
+  body {
+  margin: 0;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    
+    justify-content: center;
+    align-items: center;
+          padding-left: 100px;
+          padding-right: 100px;
+          font-size: 14px;
+}
+</style>
+<body>
+
+        <hr>
+        <div class="content">
+            <h1>Về Chúng Tôi</h1>
+            <div class="Anh">
+                <img class="Anh1" src="https://phuclong.com.vn/uploads/post/20649d183ca5f1-bannertrangchu.jpg" alt="code-img">
+              
+                <h2>TỪ NHỮNG MẦM TRÀ, CHÚNG TÔI TẠO RA NIỀM ĐAM MÊ</h2>
+          
+                <p>Trải qua hơn 50 năm chắt chiu tinh hoa từ những búp trà xanh và hạt cà phê thượng hạng cùng mong muốn mang lại cho khách hàng những trải nghiệm giá trị nhất khi thưởng thức, Phúc Long liên tục là thương hiệu tiên phong với nhiều ý tưởng sáng tạo đi đầu trong ngành trà và cà phê. <br>
+
+                    Chúng tôi tin rằng từng sản phẩm trà và cà phê sẽ càng thêm hảo hạng khi được tạo ra từ sự phấn đấu không ngừng cùng niềm đam mê. Và chính kết nối dựa trên niềm tin, sự trung thực và tin yêu sẽ góp phần mang đến những nét đẹp trong văn hóa thưởng trà và cà phê ngày càng bay cao, vươn xa.</p>
+
+            </div>
+        </div>   
+        <hr>
+        <div class="content">   
+            <div class="Anh">
+                <img class="Anh2" src="https://phuclong.com.vn/uploads/post/024b7d5e73bbb2-8ed98f521583690431954887e772tuyendung1.jpg" alt="chillies-img">
+                <br>
+                <br>
+                <br>
+                <h2>ĐỘI NGŨ NHÂN VIÊN TRÀN ĐẦY NHIỆT HUYẾT</h2>
+                <br>
+                <p>Trong suốt quá trình hoạt động và phát triển, đội ngũ quản lý và nhân viên của Phúc Long Coffee & Tea, qua bao thế hệ, đã cùng nhau xây dựng, nuôi dưỡng niềm đam mê dành cho trà và cà phê với mong muốn được thử thách bản thân trong ngành dịch vụ năng động và sáng tạo.</p>
+
+            </div>
+        </div>
+
+        <!-- SCROLLBALL -->
+        <style>
+          .list-container {
+  height: 450px;
+  overflow: auto;
+  margin-top: 330px;
+  margin-left: auto;margin-right: auto;
+  background-color: #0C713D;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.address {
+  padding: 10px;
+  border-bottom: 1px dashed #ccc ;
+  text-decoration: none;
+  color: white;
+}
+.address:hover{color: #222;}
+        </style>
+
+        <div class="list-container">
+          <h1 style="color:white;">ĐỊA CHỈ CỬA HÀNG</h1>
+          <ul>
+            <li class="address">235 Nguyễn Văn Cừ, Phường Nguyễn Cư Trinh, Quận 1, TP.HCM</li>
+            <li class="address">42 Ngô Đức Kế, Phường Bến Nghé, Quận 1, TP.HCM</li>
+            <li class="address">39 Lê Duẩn, Phường Bến Nghé, Quận 1, TP.HCM</li>
+            <li class="address">183F Trần Quốc Thảo, Phường 9, Quận 3, TP.HCM</li>
+            <li class="address">592 Lê Văn Lương, Khu Phố 1, Phường Tân Phong, Quận 7, TP.HCM</li>
+            <li class="address">218A Thành Thái, Phường 15, Quận 10, TP.HCM</li>
+            <li class="address">68 Lê Văn Khương, P.Thới An, Q.12, TP.HCM</li>
+            <li class="address">299 Đường Số 7, Khu Phố 2, Phường Bình Trị Đông B, Quận Bình Tân, TP.HCM</li>
+            <li class="address">190 Quang Trung, Phường 10, Quận Gò Vấp, TP.HCM</li>
+            <li class="address">254 Ni Sư Huỳnh Liên, Phường 10, Tân Bình, TP.HCM</li>
+            <li class="address">10 Mai Chí Thọ, P. Thủ Thiêm, TP. Thủ Đức</li>
+            
+          </ul>
+        </div>
+        <hr>
+      <div style="margin-top: 20px;">
+        <footer>
+            <div class="footer">
+            <div class="left-content">
+              <p>
+                <b>Trụ sở chính:</b> Công ty Cổ Phần Phúc Long Heritage - ĐKKD: 0316 871719 <br> 
+                do sở KHĐT TPHCM cấp lần đầu ngày 21/05/2021 <br>
+                <b>Nhà máy:</b> D_8D_CN Đường XE 1, Khu Công Nghiệp Mỹ Phước III, phường Mỹ Phước, <br> thị xã Bến Cát, tỉnh Bình Dương, Việt Nam <br>
+                <b>Địa chỉ:</b> Phòng 702, Tầng 7, Tòa nhà Central Plaza, số 17 Lê Duẩn, phường Bến Nghé, quận 1, Hồ Chí Minh <br>
+                <b>Điện thoại:</b> 1900 234 518 (Ext.9100/ 9102) <br>
+                <b>Fax:</b> (028) 6263 0379 <br>
+                <b>Email:</b> sales@phuclong.masangroup.com <br>
+                 info2@phuclong.masangroup.com</p>
+            </div>
+            <div class="right-content">
+              <ul>
+                <li><img src="https://phuclong.com.vn/images/common/dathongbao.png" alt="" class="bocongthuong"></li>
+                <li>
+                  <a href="https://www.facebook.com/phuclongcoffeeandtea/"><img src="https://cdn-icons-png.flaticon.com/128/3128/3128208.png" alt="" class="icon"><a href=""></a>
+                  <img src="https://cdn-icons-png.flaticon.com/128/733/733635.png" alt="" class="icon">
+                  <img src="https://cdn-icons-png.flaticon.com/128/4494/4494468.png" alt="" class="icon">
+                  <img src="https://cdn-icons-png.flaticon.com/128/1384/1384028.png" alt="" class="icon">
+                 </li>
+          
+            </div>
+          </div>
+          </footer>
+      </div>
+</body>
+
+</html>

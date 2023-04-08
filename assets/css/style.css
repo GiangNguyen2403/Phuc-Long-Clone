@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  overflow: auto;
+}
+.card img {
+  width: 190px;
+  height: 200px;
+}
+.card {
+  
+  transition: 0.3s;
+  width: 255px;
+  text-align: center;
+  height: 357px;
+  margin-top: 40px;
+  display: inline-block;
+  margin-left: 30px;
+  border-radius: 7px;
+  
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+button {
+  width: 125px;
+  height: 35px;
+  margin-top: 20px;
+  border-color: rgba(20, 85, 45, 0.79);
+  background-color: white;
+  border-radius: 5px;
+  font-family: 'Hind', sans-serif;
+}
+button:hover {
+  cursor: pointer;
+}
+h3 { font-weight: 300;
+  color: rgb(4, 83, 56);
+}
+.card-title {
+  font-size: large;
+  font-weight: 900;
+}
+.main {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  /* position: fixed; */
+  display: block;
+  height: 102px;
+  background-color: white;
+}
+/* .main a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} */
+li {
+  margin-top: 10px;
+}
+li:hover {
+  color: rgb(9, 107, 9);
+}
+.picture {
+  /* margin-top: 20px; */
+  width: 1500px;
+}
+.header {
+  text-align: center;
+  display: block;
+}
+.main .header {
+  /* padding-left: 150px;
+  padding-right: 500px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main .navbar {
+  border-top: 2px solid #f5f5f5;
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+  padding: 10px;
+}
+.main .navbar a {
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.sticky + body {
+  padding-top: 102px;
+}
+
+h1{font-family: 'Lora';
+  color: #0C713D;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  /* text-align: center; */
+  font-size: 36px;
+}
+
+
+.left-content{margin-left: 155px;}
+.footer{display: flex; margin-top: 20px;}
+.right-content{margin-left: 235px;}
+.bocongthuong{width: 160px; height: 60px;}
+.icon{width: 30px; height: 30px;margin-left: 7px;}
+ul{list-style: none;}
+
+.mid-content{
+  background-image: url(https://phuclong.com.vn/images/background/bg_team.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 70% auto;
+}
+.top-content{margin-top: 60px;}
+
+.option{
+    display:block;
+    font-size: 28px;
+    color: #797979;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 25px;
+    text-decoration: none;
+}
+.list{display: inline-block;}
+
+.menu{margin-left: 449px;}
+
+.option:hover{color: #0C713D;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  text-align: center;
+  padding: 0 25px;
+  border-color: #0C713D;}
+
+a.nav-title:hover{color:#14cd36d6 ;}
+
+
