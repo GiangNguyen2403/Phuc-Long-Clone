@@ -19,10 +19,11 @@ html {
   width: 255px;
   text-align: center;
   height: 357px;
-  margin-top: 40px;
+  padding: 40px;
   display: inline-block;
   margin-left: 30px;
   border-radius: 7px;
+  margin-top: 30px;
   
 }
 .card:hover {
@@ -131,6 +132,7 @@ ul{list-style: none;}
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 70% auto;
+  
 }
 .top-content{margin-top: 60px;}
 
@@ -146,7 +148,8 @@ ul{list-style: none;}
 }
 .list{display: inline-block;}
 
-.menu{margin-left: 449px;}
+/* .menu{margin-left: 449px;} */
+.menu{text-align: center;}
 
 .option:hover{color: #0C713D;
   border-top: 1px solid transparent;
