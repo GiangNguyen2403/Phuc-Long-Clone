@@ -22,7 +22,7 @@ html {
   padding: 40px;
   display: inline-block;
   /* margin-left: 30px; */
-  margin-left: 2.5%;
+  margin-left: 2%;
   border-radius: 7px;
   margin-top: 30px;
   
@@ -73,7 +73,7 @@ li:hover {
 }
 .picture {
   /* margin-top: 20px; */
-  width: 1500px;
+  width: 100%;
 }
 .header {
   text-align: center;
@@ -121,9 +121,9 @@ h1{font-family: 'Lora';
 }
 
 
-.left-content{margin-left: 155px;}
-.footer{display: flex; margin-top: 20px;}
-.right-content{margin-left: 235px;}
+.left-content{margin-left: 11.5%;}
+.footer{display: flex; margin-top: 20px; text-align: justify; width: 100%;}
+.right-content{margin-left: 16%;}
 .bocongthuong{width: 160px; height: 60px;}
 .icon{width: 30px; height: 30px;margin-left: 7px;}
 ul{list-style: none;}
@@ -160,5 +160,7 @@ ul{list-style: none;}
   border-color: #0C713D;}
 
 a.nav-title:hover{color:#14cd36d6 ;}
+.nav-title{ font-family: 'Muli', sans-serif;}
+
 
 
