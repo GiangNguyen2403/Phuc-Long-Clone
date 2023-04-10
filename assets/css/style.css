@@ -12,6 +12,7 @@ html {
 .card img {
   width: 190px;
   height: 200px;
+
 }
 .card {
   
@@ -44,10 +45,11 @@ button:hover {
 }
 h3 { font-weight: 300;
   color: rgb(4, 83, 56);
+
 }
 .card-title {
   font-size: large;
-  font-weight: 900;
+  font-weight: 600;
 }
 .main {
   font-size: 20px;
